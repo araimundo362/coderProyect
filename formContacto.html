@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <!-- Formulario de contacto-->
+    <main>
+        <form method="POST">
+            
+            <label for="name">Nombre: </label>
+            <input required type="text" name="name" id="name">
+            
+            <br>
+            <br>
+            
+            <label for="surname"> Apellido:</label>
+            <input required type="text" name="surname" id="surname">
+            
+            <br>
+            <br>
+            
+            <label for="phone">Celular: </label>
+            <input required type="tel" name="phone" id="phone">
+            
+            <br>
+            <br>
+            
+            <select name="advertising">
+                <option value="" checked > Como nos conociste? </option>
+                <option value="friend">Amigo </option>
+                <option value="google">Google </option>
+                <option value="club">Otro club </option>
+            </select>
+            
+            <br>
+            <br>
+            
+            <label for="motive"> Motivo: </label>
+            <input type="checkbox" name="motive" id="motive" value="torneo">Torneo 
+            <input type="checkbox" name="motive" id="motive" value="clases">Clases de tenis 
+            <input type="checkbox" name="motive" id="motive" value="alquiler"> Alquiler de cancha 
+            
+            <br>
+            <br>
+            
+            <button type="reset"> Limpiar formulario </button>
+            <button type="submit"> Enviar formulario</button>
+        </form>
+    </main>
+</body>
+</html>
