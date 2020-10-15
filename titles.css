@@ -2,32 +2,6 @@
     color: gold;
 }
 
-/* Codigo index add Pet
-
-console.log('veo el personal data', hasPersonalData)
-  console.log('veo los planes', plans)
-  const infoMedioPago = () => {
-    const idMedioPagoElegido = addPetForm_2.medioDePago;
-    return datosPago?.find( (mp) => mp.id === idMedioPagoElegido )
+.footer ul li a{
+    color: black;
   }
-
-  const infoPlan = () => {
-    const idPlanElegido = addPetForm_2.plan;
-    return plans.find( (p) => p.id === idPlanElegido);
-  }
-
-  const submit = async (codVen: string) => {
-    
-    const medioPagoElegido = infoMedioPago()
-      const planElegido = infoPlan()
-    
-    const sendToPasarela = {
-      numeroTarjeta: medioPagoElegido?.numero_pago,
-      vencimientoTarjeta: medioPagoElegido?.vencimiento,
-      monto: planElegido.costo
-    } */
-
-/*    Agregar dni, mail, callBack
-
-//Necesito email del user,dni, numeroTarjeta, vencimiento, nombreCliente, monto, callbackUrl
-    // Abrir iframe con la pasarela de pagos. */
