@@ -1,0 +1,11 @@
+label {
+    color: black;
+}
+
+input, select {
+    background-color: coral;
+}
+
+.onBackground {
+    background-color: chocolate;
+}
