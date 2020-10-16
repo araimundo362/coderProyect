@@ -1,3 +1,7 @@
 .onBackground {
     background-color: chocolate;
 }
+
+.footer ul li a{
+    color: black;
+  }

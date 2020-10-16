@@ -13,3 +13,7 @@ h2, h4 {
 ol li {
     color: burlywood;
 }
+
+.footer ul li a{
+    color: black;
+  }

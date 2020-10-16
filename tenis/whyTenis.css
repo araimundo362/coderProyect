@@ -13,6 +13,8 @@ h3 {
 p {
     color: greenyellow;
 }
-ul li {
+/* Antepuse el div porque sino los li del footer recibian el mismo efecto, y es algo que no deseo. */
+div ul li {
     color: beige;
 }
+
