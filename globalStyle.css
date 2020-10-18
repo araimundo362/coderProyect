@@ -1,0 +1,52 @@
+
+/* Clases definidas */
+.footer ul li a{
+    color: black;
+  }
+
+.onBackground {
+    background-color: chocolate;
+}
+
+.table {
+    border-color: coral;
+}
+
+.text {
+    color: beige;
+}
+
+.titles {
+    color: gold;
+}
+
+.torneoTitle {
+    color: goldenrod;
+}
+
+/* Estilos para etiquetas*/
+
+label {
+    color: black;
+}
+
+input, select {
+    background-color: coral;
+}
+
+h2, h3,  h4 {
+    color: goldenrod
+}
+
+ol li { /*Chequear: este en reservaTuCancha es ok, en los demas no*/
+    color: burlywood;
+}
+
+p , h6 {
+    color: greenyellow; /* solo en whyTenis*/
+}
+
+/* Antepuse el div porque sino los li del footer recibian el mismo efecto, y es algo que no deseo. */
+div ul li {
+    color: beige;
+}
