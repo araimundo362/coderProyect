@@ -8,41 +8,43 @@
     <link rel="stylesheet" href="globalStyle.css">
 </head>
 <body>
-    <header>
-        <!--Agrego un menu con lista de todas las secciones en el header-->
-        <img src="" alt="Logo del lugar">
-        <nav>
-            <ul>
-                <li><a href="torneo.html">Torneo</a></li>
-                <li><a href="reservaTuCancha.html">Reserva tu cancha</a> </li>
-                <li><a href="whyTenis.html">Porque tenis?</a> </li>
-                <li><a href="galeria.html">Galeria</a> </li>
-                <li><a href="formContacto.html">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <span> <a href="torneo.html" class="titles">Torneo</a> </span>
-        </section>
-        <section> 
-            <span> <a href="reservaTuCancha.html" class="titles">Reserva tu cancha</a> </span>
-         </section>
-         <section>
-             <span><a href="whyTenis.html" class="titles">Porque tenis?</a> </span>
-         </section>
-         <section>
-             <span><a href="galeria.html" class="titles">Galeria</a></span>
-         </section>
-    </main>
-    <footer class="footer"> 
-        <!-- Tomando en cuenta la correccion del desafio 2, aprovecho para incorporar la etiqueta nav-->
-            <ul>
-                <li><a href="formContacto.html">Contactanos</a></li> <!--Requerimiento de enlace al formulario de contacto-->
-                <li><img src="" alt="FacebookIcon"></li>
-                <li><img src="" alt="InstagramIcon"></li>
-                <li><img src="" alt="WhatsappIcon"></li>
-            </ul>
-    </footer>
+    <div class="inicioBackground">
+        <header class="header">
+            <!--Agrego un menu con lista de todas las secciones en el header-->
+            <img class="logoImg" src="imagenes/logo1.jpg" alt="Logo del lugar">
+            <nav class="menuClass">
+                <a class="aPadding" href="torneo.html">Torneo</a>
+                <a class="aPadding" href="reservaTuCancha.html">Reserva tu cancha</a> 
+                <a class="aPadding" href="whyTenis.html">Porque tenis?</a> 
+                <a class="aPadding" href="galeria.html">Galeria</a> 
+                <a class="aPadding" href="formContacto.html">Contactanos</a>
+            </nav>
+        </header>
+        <main class="mainClass">
+            <div class="sectionContainer">
+                <section class="medidasSection">
+                    <span> <a href="torneo.html" class="verticalMenu">Torneo</a> </span>
+                </section>
+                <section class="medidasSection"> 
+                    <span> <a href="reservaTuCancha.html" class="verticalMenu">Reserva tu cancha</a> </span>
+                 </section>
+                 <section class="medidasSection">
+                     <span><a href="whyTenis.html" class="verticalMenu">Porque tenis?</a> </span>
+                 </section>
+                 <section class="medidasSection">
+                     <span><a href="galeria.html" class="verticalMenu">Galeria</a></span>
+                 </section>
+            </div>
+        </main>
+        <footer class="footer"> 
+                
+                    <a class="aFooter" href="formContacto.html">Contactanos</a>
+                    <img src="" alt="FacebookIcon">
+                    <img src="" alt="InstagramIcon">
+                    <img src="" alt="WhatsappIcon">
+                
+        </footer>
+    
+    </div>
 </body>
 </html>

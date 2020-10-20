@@ -1,5 +1,68 @@
+/*Clases definidas para la pagina de inicio */
+
+/* Clases definidas para dar estilo al menu de la pagina, o header*/
+
+.inicioBackground {
+    background-image: url("imagenes/fondoInicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 660px;
+}
+
+.logoImg {
+    width: 55px;
+}
+
+.aPadding {
+    padding: 3px;
+}
+.menuClass {
+    text-align: center;
+}
+
+/* Clase para el menu principal (no el que esta en el header) */
+
+.mainClass {
+    height: 530px;
+}
+.verticalMenu {
+    color: gold;
+    
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
+
+    padding-left: 5px;
+
+}
+
+.sectionContainer {
+    height: 525px;
+    padding-top: 65px;
+}
+
+.medidasSection {
+    margin: 45px;
+}
+
+/* Clase para el footer */
+
+.footer {
+    padding-top: 30px;
+    text-align: end;
+}
+
+.aFooter {
+    font-size: larger;
+    font-weight: bold;
+}
+/**************************************************************************/
+
 
 /* Clases definidas */
+
 .footer ul li a{
     color: black;
   }
