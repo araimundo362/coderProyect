@@ -8,111 +8,119 @@
     <link rel="stylesheet" href="globalStyle.css">
 </head>
 <body>
-    <main>
-        <div class="onBackground">
-            <h2>No te quedes sin jugar!</h2>
-                <h4>Reserva tu cancha</h4>
-                <!-- Requerimiento de la tabla con una lista de comentarios incluida-->
-                <table border="solid" class="table">
-                    <tr>
-                        <th>Hora</th>
-                        <th>Cancha 1</th>
-                        <th>Cancha 2</th>
-                        <th>Cancha 3</th>
-                        <th>Comentarios</th>
-                    </tr>
-                    <tr>
-                        <td>12hs-13.30hs</td>
-                        <td> Libre </td>
-                        <td> Libre</td>
-                        <td> Libre </td>
-                        <td>
-                            <ol>
-                                <li> Traer sus propias pelotas.</li>
-                                <li> Por favor, traer zapatillas de suela lisa.</li>
-                                <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>13.30hs-15hs</td>
-                        <td> Ocupada </td>
-                        <td> Ocupada </td>
-                        <td> Libre </td>
-                        <td>
-                            <ol>
-                                <li> Traer sus propias pelotas.</li>
-                                <li> Por favor, traer zapatillas de suela lisa.</li>
-                                <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>15hs-16.30hs</td>
-                        <td>Ocupada </td>
-                        <td> Ocupada </td>
-                        <td> Ocupada </td>
-                        <td>
-                            <ol>
-                                <li> Traer sus propias pelotas.</li>
-                                <li> Por favor, traer zapatillas de suela lisa.</li>
-                                <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>16.30hs - 18hs</td>
-                        <td> Libre </td>
-                        <td> Ocupada </td>
-                        <td> Libre </td>
-                        <td>
-                            <ol>
-                                <li> Traer sus propias pelotas.</li>
-                                <li> Por favor, traer zapatillas de suela lisa.</li>
-                                <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>18hs-19.30hs</td>
-                        <td>Ocupada </td>
-                        <td> Ocupada </td>
-                        <td> Ocupada </td>
-                        <td>
-                            <ol>
-                                <li> Traer sus propias pelotas.</li>
-                                <li> Si se necesita luz artificial, la misma se cobrara.</li>
-                                <li> Por favor, traer zapatillas de suela lisa.</li>
-                                <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>19.30hs-21hs</td>
-                        <td> Libre </td>
-                        <td> Libre</td>
-                        <td> Ocupada </td>
-                        <td>
-                            <ol>
-                                <li> Traer sus propias pelotas.</li>
-                                <li> Si se necesita luz artificial, la misma se cobrara.</li>
-                                <li> Por favor, traer zapatillas de suela lisa.</li>
-                                <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </table>
-        
-        </div>
-    </main>
-    <footer class="footer"> 
-        <!-- Footer agregado a todas las secciones-->
-            <ul>
-                <li><a href="formContacto.html">Contactanos</a></li> <!--Requerimiento de enlace al formulario de contacto-->
-                <li><img src="" alt="FacebookIcon"></li>
-                <li><img src="" alt="InstagramIcon"></li>
-                <li><img src="" alt="WhatsappIcon"></li>
-            </ul>
-    </footer>
+    <div class="backgroundReservaSection">
+        <header class="header">
+            <img class="logoImg" src="imagenes/logo1.jpg" alt="Logo del lugar">
+            <nav class="menuClass">
+                <a class="aPadding" href="inicio.html">Inicio</a>
+                <a class="aPadding" href="torneo.html">Torneo</a> 
+                <a class="aPadding" href="whyTenis.html">Porque tenis?</a> 
+                <a class="aPadding" href="galeria.html">Galeria</a> 
+                <a class="aPadding" href="formContacto.html">Contactanos</a>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h2 class="reservaTitles">No te quedes sin jugar!</h2>
+                    <h4 class="reservaTitles">Reserva tu cancha</h4>
+                    <table border="solid" class="table">
+                        <tr>
+                            <th>Hora</th>
+                            <th>Cancha 1</th>
+                            <th>Cancha 2</th>
+                            <th>Cancha 3</th>
+                            <th>Comentarios</th>
+                        </tr>
+                        <tr>
+                            <td>12hs-13.30hs</td>
+                            <td> Libre </td>
+                            <td> Libre</td>
+                            <td> Libre </td>
+                            <td>
+                                <ol>
+                                    <li> Traer sus propias pelotas.</li>
+                                    <li> Por favor, traer zapatillas de suela lisa.</li>
+                                    <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13.30hs-15hs</td>
+                            <td> Ocupada </td>
+                            <td> Ocupada </td>
+                            <td> Libre </td>
+                            <td>
+                                <ol>
+                                    <li> Traer sus propias pelotas.</li>
+                                    <li> Por favor, traer zapatillas de suela lisa.</li>
+                                    <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15hs-16.30hs</td>
+                            <td>Ocupada </td>
+                            <td> Ocupada </td>
+                            <td> Ocupada </td>
+                            <td>
+                                <ol>
+                                    <li> Traer sus propias pelotas.</li>
+                                    <li> Por favor, traer zapatillas de suela lisa.</li>
+                                    <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16.30hs - 18hs</td>
+                            <td> Libre </td>
+                            <td> Ocupada </td>
+                            <td> Libre </td>
+                            <td>
+                                <ol>
+                                    <li> Traer sus propias pelotas.</li>
+                                    <li> Por favor, traer zapatillas de suela lisa.</li>
+                                    <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18hs-19.30hs</td>
+                            <td>Ocupada </td>
+                            <td> Ocupada </td>
+                            <td> Ocupada </td>
+                            <td>
+                                <ol>
+                                    <li> Traer sus propias pelotas.</li>
+                                    <li> Si se necesita luz artificial, la misma se cobrara.</li>
+                                    <li> Por favor, traer zapatillas de suela lisa.</li>
+                                    <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19.30hs-21hs</td>
+                            <td> Libre </td>
+                            <td> Libre</td>
+                            <td> Ocupada </td>
+                            <td>
+                                <ol>
+                                    <li> Traer sus propias pelotas.</li>
+                                    <li> Si se necesita luz artificial, la misma se cobrara.</li>
+                                    <li> Por favor, traer zapatillas de suela lisa.</li>
+                                    <li> En caso de no presentarse, se le cobrara un porcentaje extra por no haber cumplido con el alquiler.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+            
+            </div>
+        </main>
+        <footer class="footer"> 
+            <a class="aFooter" href="formContacto.html">Contactanos</a>
+            <img src="" alt="FacebookIcon">
+            <img src="" alt="InstagramIcon">
+            <img src="" alt="WhatsappIcon">
+        </footer>
+    </div>
 </body>
 </html>
