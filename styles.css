@@ -10,13 +10,18 @@
     width: 55px;
 }
 
-.aPadding {
-    padding: 3px;
-}
 .menuClass {
     text-align: center;
 }
 
+.colorFlexBackground {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: beige;
+}
 /* Estilo para el menu, con posibilidad de agregar sub menu a futuro*/
 nav ul {
     list-style: none;
@@ -31,13 +36,28 @@ nav ul li {
 
 a {
     color: black;
+    font-weight: bold;
 }
 
 /* Clase para el menu principal (no el que esta en el header) */
 
-.mainClass {
-    height: 355px;
+.mainContainer {
+    display: flex;
+    height: 100%;
 }
+
+.mainClass {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 15px;
+}
+
 .verticalMenu {
     color: gold;
     
@@ -53,19 +73,18 @@ a {
 /* Clase para el footer */
 
 .footer {
-    text-align: end;
+    display: flex;
+    justify-content: space-between;
+
     border-top-style: double; /*Se agrego esta propiedad como requerimiento del desafio 6*/
+
+    width: 100%;
 }
 
 .noneList {
     list-style: none;
 }
 
-.aFooter {
-    font-size: larger;
-    font-weight: bold;
-    color: black;
-}
 /**************************************************************************/
 /*Clases para la seccion torneo */
 
@@ -98,6 +117,12 @@ ol li {
 /****************************************************************************/
 /* Clases para la seccion whyTenis */
 
+.whyMainClass {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 .whyTitles {
     color: gold;
 }
@@ -108,6 +133,10 @@ p , h6 {
 /********************************************************/
 /* Clase para la galeria */
 
+.galeriaMain {
+    display: flex;
+    align-self: center;
+}
 .galeriaImg {
     width: 200px;
     height: 200px;
