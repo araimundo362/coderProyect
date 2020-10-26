@@ -2,12 +2,8 @@
 
 /* Clases definidas para dar estilo al menu de la pagina, o header*/
 
-.inicioBackground {
-    background-image: url("imagenes/fondoInicio.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 660px;
+.beigeBackground {
+    background-color: beige;
 }
 
 .logoImg {
@@ -21,15 +17,31 @@
     text-align: center;
 }
 
+/* Estilo para el menu, con posibilidad de agregar sub menu a futuro*/
+nav ul {
+    list-style: none;
+    font-size: 0;
+}
+nav ul li {
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
 /* Clase para el menu principal (no el que esta en el header) */
 
 .mainClass {
-    height: 530px;
+    height: 355px;
 }
 .verticalMenu {
     color: gold;
     
-    font-size: xxx-large;
+    font-size: 55px;
     font-weight: bold;
     font-family: sans-serif;
     font-style: italic;
@@ -38,20 +50,15 @@
 
 }
 
-.sectionContainer {
-    height: 525px;
-    padding-top: 65px;
-}
-
-.medidasSection {
-    margin: 45px;
-}
-
 /* Clase para el footer */
 
 .footer {
-    padding-top: 30px;
     text-align: end;
+    border-top-style: double; /*Se agrego esta propiedad como requerimiento del desafio 6*/
+}
+
+.noneList {
+    list-style: none;
 }
 
 .aFooter {
@@ -62,34 +69,26 @@
 /**************************************************************************/
 /*Clases para la seccion torneo */
 
-.torneoBackground {
-    background-image: url("imagenes/torneoFondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .torneoTitle {
     color: goldenrod;
 }
 
+.text {
+    color: beige;
+}
 .ballListClass {
     list-style-image: url("imagenes/ball.jpg");
 }
 
 /***************************************************************************/
 /* Clases para la seccion reserva tu cancha, la primer clase la utilizo tambien en la galeria. */
-.backgroundReservaSection {
-    background-image: url("imagenes/polvo2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .reservaTitles {
     color: gold;
 }
 
 .table {
-    border-color: coral;
+   margin: 15px;
 }
 
 ol li {
@@ -99,18 +98,8 @@ ol li {
 /****************************************************************************/
 /* Clases para la seccion whyTenis */
 
-.whyBackground {
-    background-image: url("imagenes/whyTenisFondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .whyTitles {
     color: gold;
-}
-
-.whyMainClass {
-    margin-top: 120px;
 }
 
 p , h6 {
@@ -131,61 +120,28 @@ p , h6 {
 /*********************************************************/
 /* Clase para el formulario de contacto */
 
-.backgroundContacto {
-    background-image: url("imagenes/fondoContacto.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 660px;
-}
 .marginTop {
     margin-top: 15px;
 }
 
-.mainMargin {
-    margin-top: 135px;
-    margin-left: 200px;
+.mainPadding {
+    padding: 20px;
 }
 
 .footerContacto {
     padding-top: 200px;
     text-align: left;
 }
+input, select {
+    background-color: coral;
+}
 
 label {
     color: black;
     font-size: x-large;
 }
-/* Clases definidas */
+/****************************************************************/
 
-.footer ul li a{
-    color: black;
-  }
-
-.onBackground {
-    background-color: chocolate;
-}
-
-.text {
-    color: beige;
-}
-
-.titles {
-    color: gold;
-}
-
-/* Estilos para etiquetas*/
-
-input, select {
-    background-color: coral;
-}
-
-h2, h3,  h4 {
-    color: goldenrod
-}
-
-
-/* Antepuse el div porque sino los li del footer recibian el mismo efecto, y es algo que no deseo. */
-div ul li {
-    color: beige;
+.forestGreenBackground {
+    background-color: forestgreen;
 }

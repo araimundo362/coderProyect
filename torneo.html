@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="globalStyle.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Torneo</title>
 </head>
 <body>
-    <div class="torneoBackground">
+    <div class="forestGreenBackground">
         <header class="header">
+            <!--Agrego un menu con lista de todas las secciones en el header-->
             <img class="logoImg" src="imagenes/logo1.jpg" alt="Logo del lugar">
             <nav class="menuClass">
-                <a class="aPadding" href="inicio.html">Inicio</a>
-                <a class="aPadding" href="reservaTuCancha.html">Reserva tu cancha</a> 
-                <a class="aPadding" href="whyTenis.html">Porque tenis?</a> 
-                <a class="aPadding" href="galeria.html">Galeria</a> 
-                <a class="aPadding" href="formContacto.html">Contactanos</a>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="reservaTuCancha.html">Reserva tu cancha</a></li>
+                    <li><a href="whyTenis.html">Porque tenis?</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="formContacto.html">Contactanos</a></li>
+                </ul>  
             </nav>
         </header>
         <main>
@@ -64,14 +67,16 @@
                 </ul>
             </div>
         </main> 
-        <footer class="footer"> 
-                
+        <footer class="footer">
             <a class="aFooter" href="formContacto.html">Contactanos</a>
-            <img src="" alt="FacebookIcon">
-            <img src="" alt="InstagramIcon">
-            <img src="" alt="WhatsappIcon">
-        
-</footer>
+            <ul class="noneList">
+                <li>
+                    <a href=""><img src="" alt="FacebookIcon"></a>
+                </li>
+                <li><a href=""><img src="" alt="InstagramIcon"></a></li>
+                <li><a href=""><img src="" alt="WhatsappIcon"></a></li>
+            </ul>             
+        </footer>
 
     </div>
     
