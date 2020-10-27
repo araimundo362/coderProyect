@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="forestGreenBackground">
+    <div class="colorFlexBackground">
         <header class="header">
             <!--Agrego un menu con lista de todas las secciones en el header-->
             <img class="logoImg" src="imagenes/logo1.jpg" alt="Logo del lugar">
@@ -23,24 +23,25 @@
             </nav>
         </header>
         <!-- Formulario de contacto-->
-        <main class="mainPadding">
-                <form method="POST">
-                    <div class="marginTop">
+        <div class="mainContainer">
+            <main>
+                <form class="formClass" method="POST">
+                    <div>
                         <label for="name">Nombre: </label>
                         <input required type="text" name="name" id="name">
                     </div>
                     
-                    <div class="marginTop">
+                    <div>
                         <label for="surname"> Apellido:</label>
                         <input required type="text" name="surname" id="surname">
                     </div>
                     
-                    <div class="marginTop">
+                    <div>
                         <label for="phone">Celular: </label>
                         <input required type="tel" name="phone" id="phone">
                     </div>                    
 
-                    <div class="marginTop">
+                    <div>
                         <select name="advertising">
                             <option value="" checked > Como nos conociste? </option>
                             <option value="friend">Amigo </option>
@@ -49,21 +50,22 @@
                         </select>
                     </div>
                     
-                    <div class="marginTop">
+                    <div>
                         <label for="motive"> Motivo: </label>
                         <input type="checkbox" name="motive" id="motive" value="torneo">Torneo 
                         <input type="checkbox" name="motive" id="motive" value="clases">Clases de tenis 
                         <input type="checkbox" name="motive" id="motive" value="alquiler"> Alquiler de cancha
                     </div> 
                     
-                    <div class="marginTop">
+                    <div>
                         <input type="reset" />
                         <input type="submit" />
                     </div>            
                 </form>
         </main>
+        </div>
         <footer class="footer">
-            <a class="aFooter" href="formContacto.html">Contactanos</a>
+            <a href="formContacto.html">Contactanos</a>
             <ul class="noneList">
                 <li>
                     <a href=""><img src="" alt="FacebookIcon"></a>

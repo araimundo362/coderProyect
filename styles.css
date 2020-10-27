@@ -149,20 +149,14 @@ p , h6 {
 /*********************************************************/
 /* Clase para el formulario de contacto */
 
-.marginTop {
-    margin-top: 15px;
-}
+.formClass {
+    display: flex;
+    flex-direction: column;
 
-.mainPadding {
-    padding: 20px;
-}
+    width: 100%;
+    height: 75%;
 
-.footerContacto {
-    padding-top: 200px;
-    text-align: left;
-}
-input, select {
-    background-color: coral;
+    justify-content: space-evenly;
 }
 
 label {
@@ -173,4 +167,8 @@ label {
 
 .forestGreenBackground {
     background-color: forestgreen;
+}
+
+body {
+    margin: 0px;
 }
