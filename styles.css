@@ -45,7 +45,6 @@ a {
 /* Clase para el menu principal (no el que esta en el header) */
 
 .mainContainer {
-    display: flex;
     height: 100%;
 }
 
@@ -55,6 +54,7 @@ a {
     align-self: center;
 
     width: 100%;
+    height: 100%;
 }
 
 .verticalMenu {
@@ -169,19 +169,105 @@ label {
 }
 
 body {
+    background-color: beige;
     margin: 0px;
 }
 
-.grid {
-   display: grid;
+.gridPrincipal {
+    display: grid;
 
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 40% auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 5fr 1fr;
 
-   grid-row-gap: 15px;
-   grid-column-gap: 15px;
+    height: 100%;
+    background-color: beige;
 }
 
+.canchaTenisGrid {
+   display: grid;
+
+   grid-template-areas: 
+    "franjaDoblesFondoUp fondoIzq fondoDer franjaDoblesFondoUp"
+    "franjaDoblesNet cuadradoSaqueIzquierdo cuadradoSaqueDerecho franjaDoblesNet"
+    "net net net net"
+    "franjaDoblesNet cuadradoSaqueIzquierdo cuadradoSaqueDerecho franjaDoblesNet"
+    "franjaDoblesFondoDown fondoIzq fondoDer franjaDoblesFondoDown";
+
+    grid-template-columns: 1fr repeat(2,3fr) 1fr;
+    grid-template-rows: repeat(2,4fr) auto repeat(2,4fr);
+
+    height:100%;
+}
+
+#franjaDoblesFondoUp {
+    grid-area: "franjaDoblesFondo";
+
+    border-color: white;
+    border-style: solid;
+
+    border-bottom: none;
+
+    background-color:  rgba(235, 69, 9, 0.652);
+}
+
+#franjaDoblesFondoDown {
+    grid-area: "franjaDobles";
+
+    border-color: white;
+    border-style: solid;
+
+    border-top: none;
+
+    background-color:  rgba(235, 69, 9, 0.652);
+}
+
+#cuadradoSaqueIzq {
+    grid-area: "cuadradoSaqueIzquierdo";
+
+    border-color: white;
+    border-style: solid;
+
+    background-color: rgba(235, 69, 9, 0.652);
+}
+
+#cuadradoSaqueDer {
+    grid-area: "cuadradoSaqueDerecho";
+
+    border-color: white;
+    border-style: solid;
+
+    background-color: rgba(235, 69, 9, 0.652);
+}
+
+#net {
+    grid-area: "net";
+
+    border-style: double;
+    border-color: wheat;
+}
+
+#fondoIzq {
+    grid-area: "fondoIzq";
+
+    border-color: white;
+    border-style: solid;
+    
+
+    border-right-style: none;
+
+    background-color: rgba(235, 69, 9, 0.652);
+}
+
+#fondoDer {
+    grid-area: "fondoDer";
+
+    border-color: white;
+    border-style: solid;
+
+    border-left-style: none;
+
+    background-color: rgba(235, 69, 9, 0.652);
+}
 /*
 !!! Este codigo es simplemente el que paso Dario en la clase de grids, no darle importancia!!
 #grilla {
