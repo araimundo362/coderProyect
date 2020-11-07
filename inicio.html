@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="colorFlexBackground">
-            <header class="header">
+    <header>
                 <!--Agrego un menu con lista de todas las secciones en el header-->
-                <img class="logoImg" src="imagenes/logo1.jpg" alt="Logo del lugar">
                 <nav class="menuClass">
                     <ul>
                         <li><a href="torneo.html">Torneo</a></li>
@@ -21,23 +19,51 @@
                         <li><a href="formContacto.html">Contactanos</a></li>
                     </ul>  
                 </nav>
-            </header>
-        <div class="mainContainer">
-            <main class="mainClass">
-                    <section >
-                       <a href="torneo.html" class="verticalMenu">Torneo</a>
-                    </section> 
-                    <section > 
-                       <a href="reservaTuCancha.html" class="verticalMenu">Reserva tu cancha</a>
+    </header>
+        <main class="slider">
+            <ul>
+                <li>
+                    <section class="onSection" >
+                        <div class="card">
+                            <h1>Torneo</h1>
+                            <h3>Hace click <a href="torneo.html">aqui</a> y</h3>
+                            <h3>Entra y conoce nuestro formato innovador para poder competir con jugadores de tu mismo nivel!</h3>
+                        </div>
+                            <img class="imgMenu" src="imagenes/torneoFondo.jpg" alt="">
+                     </section>
+                </li>
+                <li>
+                    <section class="onSection">
+                        <div class="card">
+                            <h1>Reserva tu cancha</h1>
+                            <h3>Hace click <a href="reservaTuCancha.html">aqui</a> y</h3>
+                            <h3>Contamos con varias canchas que podras ver sus disponibilidad y alquilarlas!</h3>
+                        </div>
+                        <img class="imgMenu" src="imagenes/reservaTuCancha.jpg" alt=""> 
                     </section>
-                     <section >
-                        <a href="whyTenis.html" class="verticalMenu">Porque tenis?</a>
-                     </section>
-                     <section >
-                        <a href="galeria.html" class="verticalMenu">Galeria</a>
-                     </section>
-            </main>
-        </div>
+                </li>
+                <li>
+                    <section class="onSection">
+                        <div class="card">
+                            <h1>Porque jugar al tenis?</h1>
+                            <h3>Hace click <a href="whyTenis.html">aqui</a> y</h3>
+                            <h3>Te Contamos en detalle porque tenes que jugar este hermoso deporte!</h3>
+                        </div>
+                        <img class="imgMenu" src="imagenes/whyTenisFondo.jpg" alt="">
+                      </section>
+                </li>
+                <li>
+                    <section class="galeriaSection">
+                        <div class="card">
+                            <h1>Galeria</h1>
+                            <h3>Hace click <a href="galeria.html">aqui</a> y</h3>
+                            <h3>Entra y mira nuestros momentos!</h3>
+                        </div>
+                        <img class="imgMenu" src="imagenes/galeria.jpg" alt="">
+                    </section>
+                </li>
+            </ul>   
+</main>
         <footer class="footer">
                 <a href="formContacto.html">Contactanos</a>
                 <ul class="noneList">
@@ -48,6 +74,5 @@
                         <li><a href=""><img src="" alt="WhatsappIcon"></a></li>
                 </ul>             
         </footer>  
-    </div>
 </body>
 </html>

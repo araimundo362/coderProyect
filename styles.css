@@ -12,6 +12,7 @@
 
 .menuClass {
     text-align: center;
+    margin-top: 10px;
 }
 
 .colorFlexBackground {
@@ -23,6 +24,9 @@
     background-color: beige;
 }
 /* Estilo para el menu, con posibilidad de agregar sub menu a futuro*/
+.header {
+    background-color: whitesmoke;
+}
 nav ul {
     list-style: none;
     font-size: 0;
@@ -40,22 +44,37 @@ a {
 }
 
 /* Clase para el menu principal (no el que esta en el header) */
+.slider {
+    width: 95%;
+    height: 499px; /* Ver como arreglar esto */ 
 
-.mainContainer {
-    display: flex;
-    height: 100%;
+    margin: auto;
+
+    overflow: hidden;
+    
 }
 
-.mainClass {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-
-    margin-bottom: 20px;
+.imgMenu {
+    height: 350px;
+    width: 450px;
 }
 
-section {
-    margin: 15px;
+.slider ul {
+    display: flex;
+
+    list-style: none;
+    padding: 0;
+
+    width: 400%;
+
+    height: 93%;
+
+    animation: changeSlide 18s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider ul li {
+    width: 100% ;
 }
 
 .verticalMenu {
@@ -66,10 +85,58 @@ section {
     font-family: sans-serif;
     font-style: italic;
 
+    position: absolute;
+    z-index: 1;
     padding-left: 5px;
 
 }
 
+@keyframes changeSlide {
+    0% {margin-left: 0;} 
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%}
+    45% {margin-left: -100%}
+
+    50% {margin-left: -200%}
+    70% {margin-left: -200%}
+
+    75% {margin-left: -300%}
+    100% {margin-left: -300%}
+
+}
+
+.onSection {
+    display: flex;
+    height: 100%;
+
+    align-items: center;
+}
+
+.galeriaSection {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h1 {
+    font-size: 50px;
+    align-self: center;
+    margin: 0;
+    color: gold;
+}
+
+.card h3 {
+    color: firebrick;
+}
 /* Clase para el footer */
 
 .footer {
@@ -171,4 +238,11 @@ label {
 
 body {
     margin: 0px;
+
+    background: #feccb1;
+    background: -moz-linear-gradient(left,  #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
+    background: -webkit-linear-gradient(left,  #feccb1 0%,#ea5507 9%,#f17432 84%,#f17432 92%,#fb955e 95%);
+    background: linear-gradient(to right,  #feccb1 0%,#ea5507 9%,#f17432 84%,#f17432 92%,#fb955e 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 );
+    
 }
