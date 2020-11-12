@@ -6,12 +6,15 @@
     <title>Formulario de contacto</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="colorFlexBackground">
         <header class="header">
             <!--Agrego un menu con lista de todas las secciones en el header-->
-            <img class="logoImg" src="imagenes/logo1.jpg" alt="Logo del lugar">
             <nav class="menuClass">
                 <ul>
                     <li><a href="inicio.html">Inicio</a></li>
@@ -23,57 +26,65 @@
             </nav>
         </header>
         <!-- Formulario de contacto-->
-        <div class="mainContainer">
-            <main>
-                <form class="formClass" method="POST">
-                    <div>
-                        <label for="name">Nombre: </label>
-                        <input required type="text" name="name" id="name">
-                    </div>
-                    
-                    <div>
-                        <label for="surname"> Apellido:</label>
-                        <input required type="text" name="surname" id="surname">
-                    </div>
-                    
-                    <div>
-                        <label for="phone">Celular: </label>
-                        <input required type="tel" name="phone" id="phone">
-                    </div>                    
-
-                    <div>
-                        <select name="advertising">
-                            <option value="" checked > Como nos conociste? </option>
-                            <option value="friend">Amigo </option>
-                            <option value="google">Google </option>
-                            <option value="club">Otro club </option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label for="motive"> Motivo: </label>
-                        <input type="checkbox" name="motive" id="motive" value="torneo">Torneo 
-                        <input type="checkbox" name="motive" id="motive" value="clases">Clases de tenis 
-                        <input type="checkbox" name="motive" id="motive" value="alquiler"> Alquiler de cancha
-                    </div> 
-                    
-                    <div>
-                        <input type="reset" />
-                        <input type="submit" />
-                    </div>            
-                </form>
+            <main class="onMain">
+                <div class="container">
+                    <form class="formClass" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre: </label>
+                            <input required type="text" name="name" id="name"  class="form-control" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="surname"> Apellido:</label>
+                            <input required type="text" name="surname" id="surname"  class="form-control" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Celular: </label>
+                            <input required type="tel" name="phone" id="phone"  class="form-control" >
+                        </div>                    
+    
+                        <div class="form-group">
+                            <select class="form-control" name="advertising">
+                                <option value="" checked > Como nos conociste? </option>
+                                <option value="friend">Amigo </option>
+                                <option value="google">Google </option>
+                                <option value="club">Otro club </option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-inline">
+                                <input name="motive" type="checkbox" id="inlineCheckbox1" value="option1"> Torneo
+                              </label>
+                              <label class="checkbox-inline">
+                                <input name="motive" type="checkbox" id="inlineCheckbox2" value="option2"> Clases de tenis 
+                              </label>
+                              <label class="checkbox-inline">
+                                <input  name="motive" type="checkbox" id="inlineCheckbox3" value="option3">  Alquiler de cancha
+                              </label>
+                            <!--<label for="motive"> Motivo: </label>
+                            <input type="checkbox" name="motive" id="motive" value="torneo">Torneo 
+                            <input type="checkbox" name="motive" id="motive" value="clases">Clases de tenis 
+                            <input type="checkbox" name="motive" id="motive" value="alquiler"> Alquiler de cancha-->
+                        </div> 
+                        <div>
+                            <input type="reset" />
+                            <input type="submit" />
+                        </div>            
+                    </form>
+                </div>
         </main>
-        </div>
         <footer class="footer">
             <a href="formContacto.html">Contactanos</a>
             <ul class="noneList">
-                <li>
-                    <a href=""><img src="" alt="FacebookIcon"></a>
-                </li>
-                <li><a href=""><img src="" alt="InstagramIcon"></a></li>
-                <li><a href=""><img src="" alt="WhatsappIcon"></a></li>
+                    <li>
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
             </ul>             
-        </footer>
+    </footer>  
     </div>
 </body>
 </html>

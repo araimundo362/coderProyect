@@ -13,6 +13,7 @@
 .menuClass {
     text-align: center;
     padding-top: 10px;
+    width: 100%;
 }
 
 .colorFlexBackground {
@@ -25,7 +26,10 @@
 }
 /* Estilo para el menu, con posibilidad de agregar sub menu a futuro*/
 .header {
-    background-color: burlywood;
+    background-color: gainsboro;
+
+    display: flex;
+    width: 100%;
 }
 nav ul {
     list-style: none;
@@ -93,20 +97,6 @@ nav ul li a:hover {
     width: 100% ;
 }
 
-.verticalMenu {
-    color: gold;
-    
-    font-size: 55px;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-style: italic;
-
-    position: absolute;
-    z-index: 1;
-    padding-left: 5px;
-
-}
-
 @keyframes changeSlide {
     0% {margin-left: 0;} 
     20% {margin-left: 0;}
@@ -138,18 +128,15 @@ nav ul li a:hover {
     height: 100%;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-}
-
-.card h1 {
-    font-size: 50px;
-    align-self: center;
-    margin: 0;
+.onPanelTitle {
     color: gold;
 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.onPanelBody {
+    padding: 15px;
 }
 
 .card h3 {
@@ -201,9 +188,6 @@ nav ul li a:hover {
     color: gold;
 }
 
-.table {
-   margin: 15px;
-}
 
 ol li {
     color: beige;
@@ -218,19 +202,22 @@ ol li {
     align-self: center;
 }
 
+.onContainer {
+    height: 100vh;
+}
+
 .whyTitles {
     color: gold;
 }
 
-p , h6 {
-    color: greenyellow;
-}
 /********************************************************/
 /* Clase para la galeria */
 
 .galeriaMain {
     display: flex;
     align-self: center;
+
+    height: 80vh;
 }
 .galeriaImg {
     width: 200px;
@@ -238,11 +225,21 @@ p , h6 {
 }
 
 .styleList {
-    list-style: none;   
+    list-style: none;  
+    width: 100%;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 /*********************************************************/
 /* Clase para el formulario de contacto */
+
+.onMain {
+    height: 80vh;
+}
 
 .formClass {
     display: flex;
