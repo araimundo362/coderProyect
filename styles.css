@@ -170,6 +170,8 @@ nav ul li a:hover {
 
     padding: 0;
 
+    margin-right: 10px;
+
 
 }
 
@@ -276,4 +278,36 @@ label {
 body {
     margin: 0px;
     
+}
+
+@media only screen and (max-width: 360px) {
+    .onSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgMenu {
+        width: 230px;
+        height: 220px;
+    }
+
+    .onPanelBody h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .onPanelTitle {
+        color: gold;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+        font-size: 14px;
+        width: 19%;
+    }
 }
