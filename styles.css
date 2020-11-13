@@ -30,10 +30,13 @@
 
     display: flex;
     width: 100%;
+
+    position: sticky;
 }
 nav ul {
     list-style: none;
     font-size: 0;
+    padding: 0;
 }
 nav ul li {
     display: inline-block;
@@ -163,7 +166,10 @@ nav ul li a:hover {
 
     display: flex;
     justify-content: space-around;
-    width: 15%;
+    width: 30%;
+
+    padding: 0;
+
 
 }
 
@@ -239,6 +245,12 @@ ol li {
 
 .onMain {
     height: 80vh;
+}
+
+.buttonContainer {
+ display: flex;
+ justify-content: space-evenly;
+ margin-bottom: 15px;   
 }
 
 .formClass {
