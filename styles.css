@@ -37,6 +37,13 @@ nav ul {
     list-style: none;
     font-size: 0;
     padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin: 0;
 }
 nav ul li {
     display: inline-block;
@@ -246,6 +253,10 @@ ol li {
     height: 200px;
 }
 
+.cardGaleria {
+    padding: 15px;
+}
+
 .styleList {
     list-style: none;  
     width: 100%;
@@ -326,5 +337,10 @@ body {
         position: relative;
         font-size: 14px;
         width: 19%;
+    }
+
+    .navImg {
+        width: 100px;
+        height: 100px;
     }
 }
