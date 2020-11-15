@@ -1,0 +1,201 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top-style: double;
+  /*Se agrego esta propiedad como requerimiento del desafio 6*/
+  width: 100%;
+  height: 80px;
+  background-color: gainsboro; }
+  .footer ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    padding: 0;
+    margin-right: 10px; }
+  .footer__noneList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    padding: 0;
+    margin-right: 10px; }
+
+.header {
+  background-color: gainsboro;
+  display: flex;
+  width: 100%;
+  position: sticky; }
+  .header__menuClass {
+    text-align: center;
+    padding-top: 10px;
+    width: 100%; }
+  .header nav ul {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0; }
+    .header nav ul li {
+      display: inline-block;
+      width: 20%;
+      position: relative;
+      font-size: 14px; }
+      .header nav ul li :hover {
+        color: gold; }
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Roboto Slab'; }
+  a :hover {
+    color: gold; }
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+  background: #feccb1;
+  background: -moz-linear-gradient(left, #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
+  background: -webkit-linear-gradient(left, #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
+  background: linear-gradient(to right, #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 ); }
+  .slider ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    height: 93%;
+    animation: changeSlide 18s infinite alternate;
+    animation-timing-function: ease-in; }
+    .slider ul li {
+      width: 100%; }
+
+.onSection {
+  display: flex;
+  height: 100%;
+  align-items: center; }
+  .onSection__onPanelTitle {
+    color: gold;
+    display: flex;
+    justify-content: center; }
+  .onSection__onPanelBody {
+    padding: 15px; }
+  .onSection__imgMenu {
+    height: 350px;
+    width: 450px; }
+
+@keyframes changeSlide {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+@media only screen and (max-width: 450px) {
+  .onSection {
+    display: flex;
+    flex-direction: column; }
+    .onSection__onPanelTitle {
+      color: gold;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      text-align: center; }
+    .onSection__onPanelBody h3 {
+      font-size: 25px;
+      text-align: center; }
+    .onSection__imgMenu {
+      width: 230px;
+      height: 220px; }
+    .onSection nav ul li {
+      display: inline-block;
+      position: relative;
+      font-size: 14px;
+      width: 19%; } }
+
+.mainTorneo {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: whitesmoke; }
+  .mainTorneo__torneoPanel {
+    text-align: center;
+    background-color: whitesmoke; }
+    .mainTorneo__torneoPanel__torneoTitle {
+      color: goldenrod; }
+
+.text {
+  color: firebrick; }
+
+.ballListClass {
+  list-style-image: url("/imagenes/ball.jpg"); }
+
+.colorFlexBackground {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: beige; }
+
+.onContainer {
+  height: 100vh; }
+
+.galeriaMain {
+  display: flex;
+  align-self: center;
+  height: 80vh; }
+
+.galeriaImg {
+  width: 200px;
+  height: 200px; }
+
+.cardGaleria {
+  padding: 15px; }
+
+.whyMainClass {
+  display: flex;
+  flex-direction: column;
+  align-self: center; }
+  .whyMainClass__whyTitles {
+    color: gold; }
+
+.onContainer {
+  height: 100vh; }
+
+.onMain {
+  height: 100vh; }
+
+.formClass {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75%;
+  justify-content: space-evenly; }
+  .formClass__buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px; }
+  .formClass label {
+    color: black;
+    font-size: x-large; }
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }

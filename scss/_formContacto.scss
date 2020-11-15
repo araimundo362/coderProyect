@@ -1,0 +1,25 @@
+.onMain {
+    height: 100vh;
+}
+
+.formClass {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 75%;
+
+    justify-content: space-evenly;
+
+    &__buttonContainer {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;   
+    }
+
+    label {
+        color: black;
+        font-size: x-large;
+    }
+}
+

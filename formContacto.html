@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     
@@ -20,8 +20,8 @@
         <header class="header">
             <!--Agrego un menu con lista de todas las secciones en el header-->
             <input type="checkbox" id="checkbox">
-            <i class="fa fa-bars" id="menuIcon" aria-hidden="true"></i>
-            <nav class="menuClass" id="headerNav">
+                <i class="fa fa-bars" id="menuIcon" aria-hidden="true"></i>
+            <nav class="header__menuClass">
                 <ul class="nav nav-tabs nav-justified">
                     <li role="presentation"><a href="inicio.html">Inicio</a></li>
                     <li role="presentation"><a href="torneo.html">Torneo</a></li>
@@ -73,7 +73,7 @@
                             <input type="checkbox" name="motive" id="motive" value="clases">Clases de tenis 
                             <input type="checkbox" name="motive" id="motive" value="alquiler"> Alquiler de cancha-->
                         </div> 
-                        <div class="buttonContainer">
+                        <div class="formClass__buttonContainer">
                             
                             <!-- Se agrego un boton para simular el envio del formulario y el reseteo del formulario -->
                             <button type="reset" class="btn btn-primary" data-toggle="button" aria-pressed="false">
@@ -90,7 +90,7 @@
         </main>
         <footer class="footer">
             <a href="formContacto.html">Contactanos</a>
-            <ul class="noneList">
+            <ul class="footer__noneList">
                     <li>
                         <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>

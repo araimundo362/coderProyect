@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 
@@ -14,23 +14,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-    <!--Agrego un menu con lista de todas las secciones en el header-->
-    <input type="checkbox" id="checkbox">
-    <i class="fa fa-bars" id="menuIcon" aria-hidden="true"></i>
-    <nav class="menuClass" id="headerNav">
-        <ul class="nav nav-tabs nav-justified">
-          <li role="presentation"><a href="inicio.html">Inicio</a></li>
-            <li role="presentation"><a href="whyTenis.html">Porque tenis?</a></li>
-            <li role="presentation"><a href="galeria.html">Galeria</a></li>
-            <li role="presentation"><a href="formContacto.html">Contacto</a></li>
-        </ul>  
-    </nav>
+      <header class="header">
+        <!--Agrego un menu con lista de todas las secciones en el header-->
+        <input type="checkbox" id="checkbox">
+        <i class="fa fa-bars" id="menuIcon" aria-hidden="true"></i>
+        <nav class="header__menuClass">
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation"><a href="inicio.html">Inicio</a></li>
+                <li role="presentation"><a href="whyTenis.html">Porque tenis?</a></li>
+                <li role="presentation"><a href="galeria.html">Galeria</a></li>
+                <li role="presentation"><a href="formContacto.html">Contacto</a></li>
+            </ul>  
+        </nav>
 </header>
         <main class="mainTorneo">
             <div>
-                <div class="torneoPanel">
-                    <h1 class="torneoTitle">Torneo</h1>
+                <div class="mainTorneo__torneoPanel">
+                    <h1 class="mainTorneo__torneoPanel__torneoTitle">Torneo</h1>
                     <p class="text">Es un torneo con un formato muy especial.
                     Nuestro torneo es un torneo donde , dentro de una misma categoría, juegan todos contra todos.
                     Al igual que un torneo de futból, el torneo les permite a sus participantes sumar puntos, fecha por fecha, con un innovador sistema de puntos bonus, además de ascensos y descensos.</p>
@@ -108,7 +108,7 @@
         </main> 
         <footer class="footer">
             <a href="formContacto.html">Contactanos</a>
-            <ul class="noneList">
+            <ul class="footer__noneList">
                     <li>
                         <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>

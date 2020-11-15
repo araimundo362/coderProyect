@@ -1,0 +1,51 @@
+.header {
+    background-color: gainsboro;
+
+    display: flex;
+    width: 100%;
+
+    position: sticky;
+
+    &__menuClass {
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;
+    }
+    
+    nav ul {
+        list-style: none;
+        font-size: 0;
+        padding: 0;
+    
+        display: flex;
+        justify-content: space-between;
+    
+        width: 100%;
+    
+        margin: 0;
+
+        li {
+            display: inline-block;
+            width: 20%;
+            position: relative;
+            font-size: 14px;
+
+            :hover {
+                color: gold;
+            }
+        }
+    }
+}
+
+a {
+    color: black;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    font-family: 'Roboto Slab';
+
+    :hover {
+        color: gold;
+    }
+}

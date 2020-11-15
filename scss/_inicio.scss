@@ -1,0 +1,102 @@
+.slider {
+    width: 100%;
+    height:100vh; 
+
+    margin: auto;
+
+    overflow: hidden;
+
+    background: #feccb1;
+    background: -moz-linear-gradient(left,  #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
+    background: -webkit-linear-gradient(left,  #feccb1 0%,#ea5507 9%,#f17432 84%,#f17432 92%,#fb955e 95%);
+    background: linear-gradient(to right,  #feccb1 0%,#ea5507 9%,#f17432 84%,#f17432 92%,#fb955e 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 );
+    
+    ul {
+        display: flex;
+
+        list-style: none;
+        padding: 0;
+
+        width: 400%;
+
+        height: 93%;
+
+        animation: changeSlide 18s infinite alternate;
+        animation-timing-function: ease-in;
+
+        li {
+            width: 100% ;
+        }
+    }
+}
+
+.onSection {
+    display: flex;
+    height: 100%;
+
+    align-items: center;
+
+    &__onPanelTitle {
+        color: gold;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__onPanelBody {
+        padding: 15px;
+    }
+
+    &__imgMenu {
+        height: 350px;
+        width: 450px;
+    }
+}
+
+@keyframes changeSlide {
+    0% {margin-left: 0;} 
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%}
+    45% {margin-left: -100%}
+
+    50% {margin-left: -200%}
+    70% {margin-left: -200%}
+
+    75% {margin-left: -300%}
+    100% {margin-left: -300%}
+
+}
+
+@media only screen and (max-width: 450px) {
+    .onSection {
+        display: flex;
+        flex-direction: column;
+
+        &__onPanelTitle {
+            color: gold;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        &__onPanelBody h3 {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        &__imgMenu {
+            width: 230px;
+            height: 220px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+            font-size: 14px;
+            width: 19%;
+        }
+    }
+}

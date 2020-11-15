@@ -1,0 +1,24 @@
+.mainTorneo {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    background-color: whitesmoke;
+
+    &__torneoPanel {
+        text-align: center;
+
+        background-color: whitesmoke;
+
+        &__torneoTitle {
+            color: goldenrod;
+        }
+    }
+}
+
+.text {
+    color: firebrick;
+}
+.ballListClass {
+    list-style-image: url("/imagenes/ball.jpg");
+}

@@ -1,0 +1,13 @@
+.whyMainClass {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    &__whyTitles {
+        color: gold;
+    }
+}
+
+.onContainer {
+    height: 100vh;
+}

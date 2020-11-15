@@ -1,0 +1,28 @@
+.colorFlexBackground {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    background-color: beige;
+}
+
+.onContainer {
+    height: 100vh;
+}
+
+.galeriaMain {
+    display: flex;
+    align-self: center;
+
+    height: 80vh;
+}
+
+.galeriaImg {
+    width: 200px;
+    height: 200px;
+}
+
+.cardGaleria {
+    padding: 15px;
+}

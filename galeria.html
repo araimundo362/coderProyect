@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
 
@@ -17,20 +17,20 @@
 </head>
 <body>
     <div class="colorFlexBackground">
-      <header class="header">
-        <!--Agrego un menu con lista de todas las secciones en el header-->
-        <input type="checkbox" id="checkbox">
-        <i class="fa fa-bars" id="menuIcon" aria-hidden="true"></i>
-        <nav class="menuClass" id="headerNav">
-            <ul class="nav nav-tabs nav-justified">
-              <li role="presentation"><a href="inicio.html">Inicio</a></li>
-                <li role="presentation"><a href="torneo.html">Torneo</a></li>
-                <li role="presentation"><a href="whyTenis.html">Porque tenis?</a></li>
-                <li role="presentation"><a href="formContacto.html">Contacto</a></li>
-            </ul>  
-        </nav>
-</header>
-        <div class="mainContainer onContainer">
+         <header class="header">
+                <!--Agrego un menu con lista de todas las secciones en el header-->
+                <input type="checkbox" id="checkbox">
+                <i class="fa fa-bars" id="menuIcon" aria-hidden="true"></i>
+                <nav class="header__menuClass">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li role="presentation"><a href="inicio.html">Inicio</a></li>
+                        <li role="presentation"><a href="torneo.html">Torneo</a></li>
+                        <li role="presentation"><a href="whyTenis.html">Porque tenis?</a></li>
+                        <li role="presentation"><a href="formContacto.html">Contacto</a></li>
+                    </ul>  
+                </nav>
+    </header>
+        <div class="onContainer">
             <main class="galeriaMain">
                 <ul class="list-unstyled">
                     <li class="media cardGaleria">
@@ -52,7 +52,7 @@
         </div>
         <footer class="footer">
             <a href="formContacto.html">Contactanos</a>
-            <ul class="noneList">
+            <ul class="footer__noneList">
                     <li>
                         <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>
