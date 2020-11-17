@@ -271,7 +271,7 @@ ol li {
 /* Clase para el formulario de contacto */
 
 .onMain {
-    height: 80vh;
+    height: 100vh;
 }
 
 .buttonContainer {
@@ -308,7 +308,57 @@ body {
     height: 100vh;
 }
 
+.onMargin {
+    margin: 10px;
+}
+
+#hamburguesa {
+    display: none !important;
+}
+
 @media only screen and (max-width: 450px) {
+
+    .menuClass {
+        opacity: 0;
+    }
+
+    #hamburguesa {
+        display: inline-flex !important;
+        align-self: center;
+        padding-left: 15px;
+    }
+
+    #hamburguesa:focus + nav {
+        display: block !important;
+        opacity: 1;
+    }
+
+    #hamburguesa:focus + nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        position: absolute;
+
+        background-color: gainsboro;
+
+        width: 40%;
+
+        justify-content: center;
+    }
+    
+    #hamburguesa + nav ul a {
+        display: block;
+        width: 10em;
+        text-decoration: none;
+        padding: .3em 0;
+        text-align: center;
+        transition: 1s all;
+    }
+
+    
     .onSection {
         display: flex;
         flex-direction: column;
