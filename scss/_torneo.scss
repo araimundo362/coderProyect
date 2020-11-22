@@ -1,6 +1,6 @@
 .mainTorneo {
-    display: flex;
-    flex-direction: column;
+   @extend .columnFlex;
+   
     height: 100vh;
 
     background-color: whitesmoke;

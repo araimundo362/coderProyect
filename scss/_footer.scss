@@ -1,10 +1,12 @@
+$ancho: 100%;
+
 .footer {
     display: flex;
     justify-content: space-between;
 
     border-top-style: double; /*Se agrego esta propiedad como requerimiento del desafio 6*/
 
-    width: 100%;
+    width: $ancho;
     height: 80px;
 
     background-color: gainsboro;

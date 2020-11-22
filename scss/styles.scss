@@ -1,3 +1,8 @@
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 @import "footer";
 @import "header";
 @import "inicio";
@@ -6,10 +11,13 @@
 @import "whyTenis";
 @import "formContacto";
 
-body {
-    margin: 0px;
-    
+.columnFlex {
     display: flex;
     flex-direction: column;
+}
+
+body {
+    @extend .columnFlex;
+    margin: 0px;
     height: 100vh;
 }

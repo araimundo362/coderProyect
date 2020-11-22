@@ -1,26 +1,27 @@
+$height: 100vh;
+
 .colorFlexBackground {
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
+    height: $height;
 
     background-color: beige;
 }
 
 .onContainer {
-    height: 100vh;
+    height: $height;
 }
 
 .galeriaMain {
     display: flex;
     align-self: center;
 
-    height: 80vh;
+    height: ($height/5) *4;
 }
 
 .galeriaImg {
-    width: 200px;
-    height: 200px;
+   @include sizes(200px, 200px )
 }
 
 .cardGaleria {

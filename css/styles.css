@@ -56,6 +56,9 @@ a {
   a :hover {
     color: gold; }
 
+#menuIcon {
+  display: none !important; }
+
 @media only screen and (max-width: 450px) {
   .header {
     background-color: gainsboro;
@@ -64,6 +67,7 @@ a {
     position: sticky;
     min-height: 40px; }
     .header #menuIcon {
+      display: flex !important;
       margin-left: 4px;
       align-self: center;
       pointer-events: none; }
@@ -126,8 +130,8 @@ a {
   .onSection__onPanelBody {
     padding: 15px; }
   .onSection__imgMenu {
-    height: 350px;
-    width: 450px; }
+    width: 450px;
+    height: 350px; }
 
 @keyframes changeSlide {
   0% {
@@ -170,8 +174,6 @@ a {
       width: 19%; } }
 
 .mainTorneo {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   background-color: whitesmoke; }
   .mainTorneo__torneoPanel {
@@ -208,8 +210,6 @@ a {
   padding: 15px; }
 
 .whyMainClass {
-  display: flex;
-  flex-direction: column;
   align-self: center; }
   .whyMainClass__whyTitles {
     color: gold; }
@@ -221,8 +221,6 @@ a {
   height: 100vh; }
 
 .formClass {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 75%;
   justify-content: space-evenly; }
@@ -234,8 +232,10 @@ a {
     color: black;
     font-size: x-large; }
 
+.columnFlex, .mainTorneo, .whyMainClass, .formClass, body {
+  display: flex;
+  flex-direction: column; }
+
 body {
   margin: 0px;
-  display: flex;
-  flex-direction: column;
   height: 100vh; }

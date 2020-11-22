@@ -1,6 +1,6 @@
 .slider {
-    width: 100%;
-    height:100vh; 
+
+    @include sizes(100%, 100vh);
 
     margin: auto;
 
@@ -18,9 +18,7 @@
         list-style: none;
         padding: 0;
 
-        width: 400%;
-
-        height: 93%;
+        @include sizes(400%, 93%);
 
         animation: changeSlide 18s infinite alternate;
         animation-timing-function: ease-in;
@@ -49,8 +47,7 @@
     }
 
     &__imgMenu {
-        height: 350px;
-        width: 450px;
+        @include sizes(450px,350px);
     }
 }
 

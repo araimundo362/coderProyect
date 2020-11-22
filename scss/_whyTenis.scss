@@ -1,6 +1,6 @@
 .whyMainClass {
-    display: flex;
-    flex-direction: column;
+    @extend .columnFlex;
+    
     align-self: center;
 
     &__whyTitles {

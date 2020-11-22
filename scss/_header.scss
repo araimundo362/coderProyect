@@ -1,15 +1,17 @@
+$ancho: 100%;
+
 .header {
     background-color: gainsboro;
 
     display: flex;
-    width: 100%;
+    width: $ancho;
 
     position: sticky;
 
     &__menuClass {
         text-align: center;
         padding-top: 10px;
-        width: 100%;
+        width: $ancho;
     }
 
     #checkbox {
@@ -24,7 +26,7 @@
         display: flex;
         justify-content: space-between;
     
-        width: 100%;
+        width: $ancho;
     
         margin: 0;
 
@@ -54,17 +56,22 @@ a {
     }
 }
 
+#menuIcon {
+    display: none !important;
+}
+
 @media only screen and (max-width: 450px) {
     .header {
         background-color: gainsboro;
 
         display: flex;
-        width: 100%;
+        width: $ancho;
 
         position: sticky;
         min-height: 40px;
 
         #menuIcon {
+            display: flex !important;
             margin-left: 4px;
             align-self: center;
     
