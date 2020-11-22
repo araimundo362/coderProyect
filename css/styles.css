@@ -30,6 +30,8 @@
     text-align: center;
     padding-top: 10px;
     width: 100%; }
+  .header #checkbox {
+    display: none; }
   .header nav ul {
     list-style: none;
     font-size: 0;
@@ -53,6 +55,44 @@ a {
   font-family: 'Roboto Slab'; }
   a :hover {
     color: gold; }
+
+@media only screen and (max-width: 450px) {
+  .header {
+    background-color: gainsboro;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    min-height: 40px; }
+    .header #menuIcon {
+      margin-left: 4px;
+      align-self: center;
+      pointer-events: none; }
+    .header #checkbox {
+      position: absolute;
+      margin-left: 5px;
+      align-self: center;
+      display: flex;
+      opacity: 0; }
+    .header #checkbox:checked ~ nav {
+      display: block !important;
+      opacity: 1; }
+    .header #checkbox:checked ~ nav ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      background-color: gainsboro;
+      width: 40%;
+      justify-content: center; }
+    .header nav ul li {
+      display: inline-block;
+      width: 95%;
+      position: relative;
+      font-size: 15px; }
+    .header__menuClass {
+      display: none; } }
 
 .slider {
   width: 100%;
