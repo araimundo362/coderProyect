@@ -316,7 +316,7 @@ body {
     display: none !important;
 }
 
-#checkbox {
+#checkbox, #menuIcon {
     display: none;
 }
 
@@ -344,6 +344,7 @@ body {
         align-self: center;
 
         pointer-events: none;
+        display: flex;
     }
 
     #checkbox:checked ~ nav {
