@@ -22,14 +22,15 @@
     margin-right: 10px; }
 
 .header {
-  background-color: gainsboro;
+  background-color: midnightblue;
   display: flex;
   width: 100%;
   position: sticky; }
   .header__menuClass {
     text-align: center;
     padding-top: 10px;
-    width: 100%; }
+    width: 100%;
+    min-height: 45px; }
   .header #checkbox {
     display: none; }
   .header nav ul {
@@ -39,7 +40,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 0; }
+    margin: 0;
+    border-bottom: none; }
     .header nav ul li {
       display: inline-block;
       width: 20%;
@@ -61,16 +63,17 @@ a {
 
 @media only screen and (max-width: 450px) {
   .header {
-    background-color: gainsboro;
+    background-color: midnightblue;
     display: flex;
     width: 100%;
     position: sticky;
     min-height: 40px; }
     .header #menuIcon {
       display: flex !important;
-      margin-left: 4px;
+      margin-left: 10px;
       align-self: center;
-      pointer-events: none; }
+      pointer-events: none;
+      color: white; }
     .header #checkbox {
       position: absolute;
       margin-left: 5px;
@@ -87,7 +90,7 @@ a {
       margin: 0;
       padding: 0;
       position: absolute;
-      background-color: gainsboro;
+      background-color: midnightblue;
       width: 40%;
       justify-content: center; }
     .header nav ul li {
@@ -103,11 +106,7 @@ a {
   height: 100vh;
   margin: auto;
   overflow: hidden;
-  background: #feccb1;
-  background: -moz-linear-gradient(left, #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
-  background: -webkit-linear-gradient(left, #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
-  background: linear-gradient(to right, #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 ); }
+  background-color: honeydew; }
   .slider ul {
     display: flex;
     list-style: none;
