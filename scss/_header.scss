@@ -1,7 +1,7 @@
 $ancho: 100%;
 
 .header {
-    background-color: gainsboro;
+    background-color: midnightblue;
 
     display: flex;
     width: $ancho;
@@ -12,6 +12,8 @@ $ancho: 100%;
         text-align: center;
         padding-top: 10px;
         width: $ancho;
+
+        min-height: 45px;
     }
 
     #checkbox {
@@ -29,6 +31,8 @@ $ancho: 100%;
         width: $ancho;
     
         margin: 0;
+
+        border-bottom: none;
 
         li {
             display: inline-block;
@@ -62,7 +66,7 @@ a {
 
 @media only screen and (max-width: 450px) {
     .header {
-        background-color: gainsboro;
+        background-color: midnightblue;
 
         display: flex;
         width: $ancho;
@@ -72,10 +76,12 @@ a {
 
         #menuIcon {
             display: flex !important;
-            margin-left: 4px;
+            margin-left: 10px;
             align-self: center;
     
             pointer-events: none;
+
+            color:white;
         }
 
         #checkbox {
@@ -101,7 +107,7 @@ a {
     
             position: absolute;
     
-            background-color: gainsboro;
+            background-color:midnightblue;
     
             width: 40%;
     

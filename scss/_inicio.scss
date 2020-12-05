@@ -6,11 +6,7 @@
 
     overflow: hidden;
 
-    background: #feccb1;
-    background: -moz-linear-gradient(left,  #feccb1 0%, #ea5507 9%, #f17432 84%, #f17432 92%, #fb955e 95%);
-    background: -webkit-linear-gradient(left,  #feccb1 0%,#ea5507 9%,#f17432 84%,#f17432 92%,#fb955e 95%);
-    background: linear-gradient(to right,  #feccb1 0%,#ea5507 9%,#f17432 84%,#f17432 92%,#fb955e 95%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 );
+   background-color: honeydew;
     
     ul {
         display: flex;
