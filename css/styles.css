@@ -206,13 +206,25 @@ a {
   height: 100vh; }
 
 .galeriaMain {
+  background-color: gainsboro;
+  height: 100vh;
   display: flex;
-  align-self: center;
-  height: 80vh; }
+  align-items: center;
+  justify-content: center; }
+  .galeriaMain__ulGaleria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    max-width: 65%; }
+  .galeriaMain__imgCard {
+    height: 250px;
+    margin: 10px; }
 
 .galeriaImg {
-  width: 200px;
-  height: 200px; }
+  width: 250px;
+  height: 250px; }
 
 .cardGaleria {
   padding: 15px; }
