@@ -4,10 +4,9 @@ $ancho: 100%;
     display: flex;
     justify-content: space-between;
 
-    border-top-style: double; /*Se agrego esta propiedad como requerimiento del desafio 6*/
+    border-top-style: double; 
 
     width: $ancho;
-    height: 80px;
 
     background-color: gainsboro;
 

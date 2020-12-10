@@ -8,6 +8,11 @@ $ancho: 100%;
 
     position: sticky;
 
+    &__title {
+        color: gold;
+        display: none;
+    }
+
     &__menuClass {
         text-align: center;
         padding-top: 10px;
@@ -73,6 +78,20 @@ a {
 
         position: sticky;
         min-height: 40px;
+
+        &__title {
+            color: gold;
+            
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-end;
+            align-self: center;
+
+            margin: 0;
+            padding-right: 10px;
+            
+        }
 
         #menuIcon {
             display: flex !important;
