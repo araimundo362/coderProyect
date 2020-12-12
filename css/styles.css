@@ -3,7 +3,7 @@
   justify-content: space-between;
   border-top-style: double;
   width: 100%;
-  background-color: gainsboro; }
+  background-color: midnightblue; }
   .footer ul li {
     list-style: none;
     display: flex;
@@ -219,12 +219,12 @@ a {
     height: 100%;
     max-width: 65%; }
   .galeriaMain__imgCard {
-    height: 250px;
+    height: 210px;
     margin: 10px; }
 
 .galeriaImg {
-  width: 250px;
-  height: 250px; }
+  width: 200px;
+  height: 200px !important; }
 
 .cardGaleria {
   padding: 15px; }

@@ -33,13 +33,13 @@ $height: 100vh;
         max-width: 65%;
     }
     &__imgCard {
-        height: 250px;
+        height: 210px;
         margin: 10px;
     }
 }
 
 .galeriaImg {
-   @include sizes(250px, 250px )
+   @include sizes(200px, 200px !important)
 }
 
 .cardGaleria {
