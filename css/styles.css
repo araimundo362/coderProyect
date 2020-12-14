@@ -191,10 +191,11 @@ a {
       color: goldenrod; }
 
 .text {
-  color: firebrick; }
+  color: firebrick;
+  padding: 7px; }
 
 .ballListClass {
-  list-style-image: url("/imagenes/ball.jpg"); }
+  list-style-image: url("../imagenes/ball.jpg"); }
 
 .colorFlexBackground {
   display: flex;
@@ -232,10 +233,19 @@ a {
 .whyMainClass {
   align-self: center; }
   .whyMainClass__whyTitles {
-    color: gold; }
+    color: gold;
+    text-align: center; }
+  .whyMainClass__content {
+    text-align: center;
+    padding: 10px; }
 
 .onContainer {
   height: 100vh; }
+
+@media only screen and (max-width: 450px) {
+  .onContainer {
+    height: 100vh;
+    overflow: auto; } }
 
 .onMain {
   height: 100vh; }
