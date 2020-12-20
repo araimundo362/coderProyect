@@ -1,20 +1,13 @@
 $height: 100vh;
 
-.colorFlexBackground {
-    display: flex;
-    flex-direction: column;
-
-    height: $height;
-
-    background-color: beige;
-}
 
 .onContainer {
     height: $height;
 }
 
 .galeriaMain {
-    
+
+    height: inherit;
     background-image: url('../imagenes/cancha-tenis.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,18 +16,18 @@ $height: 100vh;
     align-items: center;
     justify-content: center;
 
-    &__ulGaleria {
+
+    &__divContainerImg {
         display: flex;
         flex-wrap: wrap;
 
+        height: inherit;
         justify-content: center;
-        align-content: center;
+        align-items: center;
 
-        height: 100%;
-        max-width: 60%;
-    }
-    &__imgCard {
-        height: 210px;
+        img {
+            margin: 10px;
+        }
     }
 }
 
@@ -48,24 +41,19 @@ $height: 100vh;
     padding: 15px;
 }
 
-@media only screen and (max-width: 750px) {
-    .galeriaMain {
+@media only screen and (max-width:650px) {
 
+    .galeriaMain{
 
-        &__ulGaleria {
-            display: flex;
+        &__divContainerImg {
 
+            height: inherit;
             justify-content: center;
-            align-content: center;
-            
-            height: 100%;
-            max-width: 80%;
+            overflow: auto;
 
-            overflow: hidden;
+            img {
+                margin: 5px;
+            }
+        }
     }
-
-    &__imgCard {
-        height: 210px;
-    }
-}
 }

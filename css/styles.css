@@ -199,31 +199,25 @@ a {
 .ballListClass {
   list-style-image: url("../imagenes/ball.jpg"); }
 
-.colorFlexBackground {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: beige; }
-
 .onContainer {
   height: 100vh; }
 
 .galeriaMain {
+  height: inherit;
   background-image: url("../imagenes/cancha-tenis.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .galeriaMain__ulGaleria {
+  .galeriaMain__divContainerImg {
     display: flex;
     flex-wrap: wrap;
+    height: inherit;
     justify-content: center;
-    align-content: center;
-    height: 100%;
-    max-width: 60%; }
-  .galeriaMain__imgCard {
-    height: 210px; }
+    align-items: center; }
+    .galeriaMain__divContainerImg img {
+      margin: 10px; }
 
 .galeriaImg {
   width: 200px;
@@ -233,16 +227,13 @@ a {
 .cardGaleria {
   padding: 15px; }
 
-@media only screen and (max-width: 750px) {
-  .galeriaMain__ulGaleria {
-    display: flex;
+@media only screen and (max-width: 650px) {
+  .galeriaMain__divContainerImg {
+    height: inherit;
     justify-content: center;
-    align-content: center;
-    height: 100%;
-    max-width: 80%;
-    overflow: hidden; }
-  .galeriaMain__imgCard {
-    height: 210px; } }
+    overflow: auto; }
+    .galeriaMain__divContainerImg img {
+      margin: 5px; } }
 
 .whyMainClass {
   align-self: center; }
