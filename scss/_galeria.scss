@@ -18,9 +18,6 @@ $height: 100vh;
     background-image: url('../imagenes/cancha-tenis.jpg') !important;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    //background-color: gainsboro;
-    height: $height;
 
     display: flex;
     align-items: center;
@@ -34,11 +31,10 @@ $height: 100vh;
         align-content: center;
 
         height: 100%;
-        max-width: 65%;
+        max-width: 60%;
     }
     &__imgCard {
         height: 210px;
-        margin: 10px;
     }
 }
 
@@ -50,4 +46,26 @@ $height: 100vh;
 
 .cardGaleria {
     padding: 15px;
+}
+
+@media only screen and (max-width: 750px) {
+    .galeriaMain {
+
+
+        &__ulGaleria {
+            display: flex;
+
+            justify-content: center;
+            align-content: center;
+            
+            height: 100%;
+            max-width: 80%;
+
+            overflow: hidden;
+    }
+
+    &__imgCard {
+        height: 210px;
+    }
+}
 }

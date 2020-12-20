@@ -44,9 +44,36 @@
     height: 100vh;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1000px) {
     .onContainer {
         height: 100vh;
         overflow: auto;
     } 
+
+    .whyMainClass {
+
+        &__whyTitles {
+            color: gold;
+            text-align: center;
+
+            width: 75%;
+        }
+
+        &__content {
+            text-align: center;
+            padding: 10px;
+
+            width: 75%;
+        }
+
+        &__divUlImg {
+
+            display: flex;
+            width: 75%;
+
+            &__imgContainer {
+                display: none;
+            }
+        }
+    }
 }
