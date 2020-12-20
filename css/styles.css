@@ -4,6 +4,8 @@
   border-top-style: double;
   width: 100%;
   background-color: midnightblue; }
+  .footer__contacto {
+    padding-left: 6px; }
   .footer ul li {
     list-style: none;
     display: flex;
@@ -207,7 +209,9 @@ a {
   height: 100vh; }
 
 .galeriaMain {
-  background-color: gainsboro;
+  background-image: url("../imagenes/cancha-tenis.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -225,7 +229,8 @@ a {
 
 .galeriaImg {
   width: 200px;
-  height: 200px !important; }
+  height: 200px !important;
+  border-color: brown !important; }
 
 .cardGaleria {
   padding: 15px; }
@@ -238,6 +243,21 @@ a {
   .whyMainClass__content {
     text-align: center;
     padding: 10px; }
+  .whyMainClass__divUlImg {
+    display: flex; }
+    .whyMainClass__divUlImg__listClass {
+      list-style-image: url("../imagenes/ball.jpg");
+      margin-top: 15px;
+      width: 100%; }
+    .whyMainClass__divUlImg__imgContainer {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center; }
+    .whyMainClass__divUlImg__img {
+      margin: 5px;
+      width: 230px;
+      height: 260px; }
 
 .onContainer {
   height: 100vh; }
@@ -248,7 +268,20 @@ a {
     overflow: auto; } }
 
 .onMain {
-  height: 100vh; }
+  height: 100vh;
+  display: flex; }
+  .onMain__aside {
+    display: flex;
+    height: fit-content; }
+  .onMain__container {
+    display: flex;
+    height: fit-content;
+    height: 90%;
+    align-items: flex-end; }
+
+.onImg {
+  width: 325px;
+  margin-top: 10px; }
 
 .formClass {
   width: 100%;

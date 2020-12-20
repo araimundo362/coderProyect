@@ -1,5 +1,24 @@
 .onMain {
     height: 100vh;
+    display: flex;
+
+    &__aside {
+        display: flex;
+        height: fit-content;
+    }
+
+    &__container {
+        display: flex;
+        height: fit-content;
+
+        height: 90%;
+        align-items: flex-end;
+    }
+}
+
+.onImg {
+    width: 325px;
+    margin-top: 10px;
 }
 
 .formClass {

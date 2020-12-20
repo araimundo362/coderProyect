@@ -15,7 +15,11 @@ $height: 100vh;
 
 .galeriaMain {
     
-    background-color: gainsboro;
+    background-image: url('../imagenes/cancha-tenis.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    //background-color: gainsboro;
     height: $height;
 
     display: flex;
@@ -39,7 +43,9 @@ $height: 100vh;
 }
 
 .galeriaImg {
-   @include sizes(200px, 200px !important)
+   @include sizes(200px, 200px !important);
+
+   border-color: brown !important;
 }
 
 .cardGaleria {

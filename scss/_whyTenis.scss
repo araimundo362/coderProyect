@@ -12,6 +12,32 @@
         text-align: center;
         padding: 10px;
     }
+
+    &__divUlImg {
+        display: flex;
+
+        &__listClass {
+            list-style-image: url("../imagenes/ball.jpg"); 
+
+            margin-top: 15px;
+            width: 100%;
+          
+          }
+
+          &__imgContainer {
+              width: 100%;
+              height: auto;
+
+              display: flex;
+              align-items: center;
+              //justify-content: center;
+          }
+        &__img {
+            margin: 5px;
+
+            @include sizes(230px, 260px);
+        }
+    }
 }
 
 .onContainer {
